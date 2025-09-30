@@ -1,0 +1,281 @@
+/*
+ * style.css - Estilos para o Ranking de Filmes (Tema Preto e Vermelho)
+ */
+
+/* ================================================= */
+/* ESTILOS GERAIS E RESET */
+/* ================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover, a:focus {
+    color: #ff4d4f;
+    outline: none;
+}
+
+ol {
+    list-style: none;
+}
+
+/* ================================================= */
+/* 1. CABEÇALHO FIXO (#header) */
+/* ================================================= */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: linear-gradient(to right, #000000, #1a0000); 
+    border-bottom: 2px solid #e50914;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+.main-nav ul li {
+    margin-left: 20px;
+}
+.main-nav a {
+    color: #ccc;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.main-nav a:hover {
+    color: #e50914;
+}
+
+/* ================================================= */
+/* 2. LAYOUT PRINCIPAL */
+/* ================================================= */
+#main-container {
+    display: flex;
+    padding-top: 70px;
+}
+
+/* ================================================= */
+/* 3. MENU LATERAL FIXO (#sidebar) */
+/* ================================================= */
+#sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 70px);
+    z-index: 900;
+    background: #0d0d0d;
+    padding: 20px 15px;
+    overflow-y: auto;
+    border-right: 1px solid #330000;
+}
+
+#sidebar h2 {
+    color: #e50914;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 5px;
+}
+
+.movie-list-nav ol li {
+    margin-bottom: 8px;
+}
+.movie-list-nav a {
+    display: block;
+    color: #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+.movie-list-nav a:hover {
+    color: #fff;
+    background-color: #330000;
+}
+
+/* ================================================= */
+/* 4. CONTEÚDO PRINCIPAL (#main-content) */
+/* ================================================= */
+#main-content {
+    margin-left: 250px; 
+    flex-grow: 1;
+    padding: 30px;
+    max-width: 1200px;
+    background-color: #111;
+}
+
+#main-content h2 {
+    color: #e50914;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ================================================= */
+/* 5. SEÇÃO DE RANKING (movie-ranking) */
+/* ================================================= */
+.movie-ranking {
+    background: linear-gradient(to bottom, #1a1a1a, #141414);
+    border: 1px solid #330000;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ranking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+.ranking-header h3 {
+    color: #fff;
+    font-size: 1.6em;
+}
+.rank-number {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #e50914;
+    padding: 5px 10px;
+    background-color: #330000;
+    border-radius: 5px;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 15px;
+    border: 2px solid #e50914;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+/* ================================================= */
+/* 6. BOTÕES LOCADORA */
+/* ================================================= */
+.locadora-actions {
+    margin-top: 15px;
+}
+.action-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.action-btn:hover, .action-btn:focus {
+    background-color: #ff4d4f;
+    transform: scale(1.05);
+    outline: none;
+}
+.status-locacao {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* ================================================= */
+/* 7. RODAPÉ */
+/* ================================================= */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #330000;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* ================================================= */
+/* 8. RESPONSIVIDADE */
+/* ================================================= */
+@media (max-width: 992px) {
+    /* Sidebar vira topo em tablets */
+    #sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #330000;
+        margin-bottom: 15px;
+    }
+    #main-content {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .logo h1 {
+        font-size: 1.2em;
+    }
+    .main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+    #sidebar h2 {
+        font-size: 1.1em;
+    }
+    .ranking-header h3 {
+        font-size: 1.2em;
+    }
+    .rank-number {
+        font-size: 1em;
+        padding: 3px 6px;
+    }
+    .movie-poster {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo h1, #sidebar h2, .ranking-header h3 {
+        font-size: 0.9em;
+    }
+    .action-btn {
+        padding: 8px 12px;
+        font-size: 0.85em;
+    }
+    .main-nav a {
+        font-size: 0.85em;
+    }
+}

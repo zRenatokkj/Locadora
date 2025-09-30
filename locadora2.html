@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Top 20 Filmes - A Locadora Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="header">
+  <div class="logo">
+    <h1>A Locadora do Top 20</h1>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Saiba Mais</a></li>
+      <li><a href="#contact">Contato</a></li>
+      <li><a href="#share">Compartilhar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="main-container">
+  <aside id="sidebar">
+    <h2>Lista de Filmes</h2>
+    <nav class="movie-list-nav">
+      <ol>
+        <li><a href="#filme1">1. O Poderoso Chefão</a></li>
+        <li><a href="#filme2">2. Um Sonho de Liberdade</a></li>
+        <li><a href="#filme3">3. O Retorno do Rei</a></li>
+        <li><a href="#filme4">4. A Sociedade do Anel</a></li>
+        <li><a href="#filme5">5. As Duas Torres</a></li>
+        <li><a href="#filme6">6. Um Maluco no Golfe</a></li>
+        <li><a href="#filme7">7. Guardiões da Galáxia</a></li>
+        <li><a href="#filme8">8. Guardiões da Galáxia Vol.2</a></li>
+        <li><a href="#filme9">9. Guardiões da Galáxia Vol.3</a></li>
+        <li><a href="#filme10">10. O Cavaleiro das Trevas</a></li>
+        <li><a href="#filme11">11. O Cavaleiro das Trevas Ressurge</a></li>
+        <li><a href="#filme12">12. Batman Begins</a></li>
+        <li><a href="#filme13">13. Beekeeper – Rede de Vingança</a></li>
+        <li><a href="#filme14">14. Toy Story</a></li>
+        <li><a href="#filme15">15. Invocação do Mal</a></li>
+        <li><a href="#filme16">16. Bad Boys</a></li>
+        <li><a href="#filme17">17. Bad Boys 2</a></li>
+        <li><a href="#filme18">18. Bad Boys para Sempre</a></li>
+        <li><a href="#filme19">19. Bad Boys até o Fim</a></li>
+        <li><a href="#filme20">20. O Anônimo</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+    <h2>O Meu Ranking Pessoal: A Locadora de Filmes Favoritos</h2>
+    <p>Role para ver os 20 filmes e clique nas opções "Emprestar" ou "Vender" para simular a transação.</p>
+
+    <section class="movie-ranking" id="filme1">
+      <div class="ranking-header">
+        <h3>#1: O Poderoso Chefão (1972)</h3>
+        <span class="rank-number">1º Lugar</span>
+      </div>
+      <p>Um clássico absoluto do cinema, com uma narrativa intensa sobre poder, família e máfia.</p>
+      <img src="./img/filmes/poderosoChef.jpg" alt="Poster do Filme 1" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme1', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme1', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme1">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme2">
+      <div class="ranking-header">
+        <h3>#2: Um Sonho de Liberdade (1994)</h3>
+        <span class="rank-number">2º Lugar</span>
+      </div>
+      <p>Uma história emocionante sobre esperança e amizade que inspira até hoje.</p>
+      <img src="./img/filmes/umSonho.jpg" alt="Poster do Filme 2" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme2', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme2', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme2">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme3">
+      <div class="ranking-header">
+        <h3>#3: Senhor dos Anéis: O Retorno do Rei</h3>
+        <span class="rank-number">3º Lugar</span>
+      </div>
+      <p>Uma conclusão épica para uma das maiores sagas da história do cinema.</p>
+      <img src="./img/filmes/LOTRRR.jpg" alt="Poster do Filme 3" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme3', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme3', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme3">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme4">
+      <div class="ranking-header">
+        <h3>#4: Senhor dos Anéis: A Sociedade do Anel</h3>
+        <span class="rank-number">4º Lugar</span>
+      </div>
+      <p>O início mágico da jornada que nos apresentou a Terra-média.</p>
+      <img src="./img/filmes/senhorDosAneis.jpg" alt="Poster do Filme 4" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme4', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme4', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme4">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme5">
+      <div class="ranking-header">
+        <h3>#5: Senhor dos Anéis: As Duas Torres</h3>
+        <span class="rank-number">5º Lugar</span>
+      </div>
+      <p>Cheio de batalhas memoráveis, aprofunda ainda mais a saga de Tolkien.</p>
+      <img src="./img/filmes/The_Lord_of_the_Rings_The_Two_Towers.jpg" alt="Poster do Filme 5" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme5', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme5', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme5">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme6">
+      <div class="ranking-header">
+        <h3>#6: Um Maluco no Golfe</h3>
+        <span class="rank-number">6º Lugar</span>
+      </div>
+      <p>Uma comédia leve e divertida que garante boas risadas.</p>
+      <img src="./img/filmes/umMaluco.jpg" alt="Poster do Filme 6" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme6', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme6', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme6">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme7">
+      <div class="ranking-header">
+        <h3>#7: Guardiões da Galáxia</h3>
+        <span class="rank-number">7º Lugar</span>
+      </div>
+      <p>Um grupo improvável de heróis em uma aventura cósmica cheia de humor.</p>
+      <img src="./img/filmes/goftg.jpg" alt="Poster do Filme 7" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme7', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme7', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme7">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme8">
+      <div class="ranking-header">
+        <h3>#8: Guardiões da Galáxia Vol.2</h3>
+        <span class="rank-number">8º Lugar</span>
+      </div>
+      <p>Uma sequência divertida que explora laços familiares e muita ação espacial.</p>
+      <img src="./img/filmes/goftg2.jpg" alt="Poster do Filme 8" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme8', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme8', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme8">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme9">
+      <div class="ranking-header">
+        <h3>#9: Guardiões da Galáxia Vol.3</h3>
+        <span class="rank-number">9º Lugar</span>
+      </div>
+      <p>Uma despedida emocionante para os personagens que conquistaram os fãs.</p>
+      <img src="./img/filmes/goftg3.jpg" alt="Poster do Filme 9" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme9', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme9', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme9">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme10">
+      <div class="ranking-header">
+        <h3>#10: Batman: O Cavaleiro das Trevas</h3>
+        <span class="rank-number">10º Lugar</span>
+      </div>
+      <p>Um dos melhores filmes de super-heróis já feitos, com um Coringa inesquecível.</p>
+      <img src="./img/filmes/batmanC.jpg" alt="Poster do Filme 10" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme10', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme10', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme10">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme11">
+      <div class="ranking-header">
+        <h3>#11: Batman: O Cavaleiro das Trevas Ressurge</h3>
+        <span class="rank-number">11º Lugar</span>
+      </div>
+      <p>Um final grandioso para a trilogia de Christopher Nolan.</p>
+      <img src="./img/filmes/batmanR.jpg" alt="Poster do Filme 11" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme11', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme11', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme11">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme12">
+      <div class="ranking-header">
+        <h3>#12: Batman Begins</h3>
+        <span class="rank-number">12º Lugar</span>
+      </div>
+      <p>Um recomeço sombrio que redefiniu o herói para o cinema moderno.</p>
+      <img src="./img/filmes/batmanB.jpg" alt="Poster do Filme 12" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme12', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme12', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme12">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme13">
+      <div class="ranking-header">
+        <h3>#13: Beekeeper – Rede de Vingança</h3>
+        <span class="rank-number">13º Lugar</span>
+      </div>
+      <p>Ação eletrizante com Jason Statham em busca de justiça implacável.</p>
+      <img src="./img/filmes/beeR.jpg" alt="Poster do Filme 13" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme13', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme13', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme13">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme14">
+      <div class="ranking-header">
+        <h3>#14: Toy Story</h3>
+        <span class="rank-number">14º Lugar</span>
+      </div>
+      <p>O filme que revolucionou a animação e conquistou gerações.</p>
+      <img src="./img/filmes/toy.jpg" alt="Poster do Filme 14" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme14', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme14', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme14">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme15">
+      <div class="ranking-header">
+        <h3>#15: Invocação do Mal</h3>
+        <span class="rank-number">15º Lugar</span>
+      </div>
+      <p>Um terror arrepiante baseado em eventos reais investigados por Ed e Lorraine Warren.</p>
+      <img src="./img/filmes/invocação.jpg" alt="Poster do Filme 15" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme15', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme15', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme15">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme16">
+      <div class="ranking-header">
+        <h3>#16: Bad Boys</h3>
+        <span class="rank-number">16º Lugar</span>
+      </div>
+      <p>Will Smith e Martin Lawrence em uma das duplas mais carismáticas do cinema de ação.</p>
+      <img src="./img/filmes/badBoys.jpg" alt="Poster do Filme 16" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme16', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme16', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme16">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme17">
+      <div class="ranking-header">
+        <h3>#17: Bad Boys 2</h3>
+        <span class="rank-number">17º Lugar</span>
+      </div>
+      <p>Ainda mais ação e humor, consolidando o sucesso da dupla de policiais.</p>
+      <img src="./img/filmes/badBoys2.jpg" alt="Poster do Filme 17" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme17', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme17', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme17">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme18">
+      <div class="ranking-header">
+        <h3>#18: Bad Boys para Sempre</h3>
+        <span class="rank-number">18º Lugar</span>
+      </div>
+      <p>Um retorno nostálgico e cheio de adrenalina para os fãs da franquia.</p>
+      <img src="./img/filmes/badBoysPS.jpg" alt="Poster do Filme 18" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme18', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme18', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme18">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme19">
+      <div class="ranking-header">
+        <h3>#19: Bad Boys até o Fim</h3>
+        <span class="rank-number">19º Lugar</span>
+      </div>
+      <p>Mais recente capítulo da saga, equilibrando humor e ação explosiva.</p>
+      <img src="./img/filmes/badBoysAF.jpg" alt="Poster do Filme 19" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme19', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme19', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme19">Disponível para locação.</p>
+      </div>
+    </section>
+
+    <section class="movie-ranking" id="filme20">
+      <div class="ranking-header">
+        <h3>#20: O Anônimo (2021)</h3>
+        <span class="rank-number">20º Lugar</span>
+      </div>
+      <p>Um homem aparentemente comum revela um passado cheio de segredos em um filme de ação intenso e surpreendente.</p>
+      <img src="./img/filmes/anonimo.jpg" alt="Poster do Filme 20" class="movie-poster">
+      <div class="locadora-actions">
+        <button class="action-btn emprestar-btn" onclick="simularLocacao('filme20', 'Emprestar')">Emprestar (R$ 5,00)</button>
+        <button class="action-btn vender-btn" onclick="simularLocacao('filme20', 'Vender')">Vender (R$ 30,00)</button>
+        <p class="status-locacao" id="status-filme20">Disponível para locação.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Ranking Pessoal de Filmes. Todos os direitos reservados.</p>
+</footer>
+
+<script src="locadora.js"></script>
+</body>
+</html>
